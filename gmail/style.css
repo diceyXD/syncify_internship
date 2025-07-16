@@ -1,0 +1,253 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.header-left {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 30px;
+  height: 48px;
+  width: 166px;
+  align-items: center;
+  font-size: 23px;
+  color: #4e4848;
+  margin-left: 11px;
+  margin-top: 5px;
+}
+.gmail-logo {
+  width: 30px;
+  height: 30px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(250, 238, 238);
+  border-radius: 25px;
+  width: 675px;
+  margin-right: 690px;
+  margin-top: 10px;
+  align-items: center;
+  height: 42px;
+}
+.search-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.search-input {
+  width: 536px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(250, 238, 238);
+  padding-left: 10px;
+  font-size: 16px;
+  border: none;
+}
+.header-right {
+  display: flex;
+  justify-content: right;
+  gap: 16px;
+  height: 55px;
+  align-items: center;
+  margin-right: 15px;
+}
+.header-icon-right {
+  width: 30px;
+  height: 30px;
+  padding-left: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.header-icon-right:hover {
+  background-color: #e8f0fe;
+  cursor: pointer;
+}
+.right-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #c91010;
+  color: white;
+  font-size: 16px;
+}
+
+/* Sidebar */
+.slide-down {
+  padding: 10px 0 0 0;
+}
+.leftslide {
+  padding: 6px 15px 24px 29px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.leftslide-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leftslide-icon {
+  width: 18px;
+  height: 18px;
+  transition: background-color 0.2s;
+}
+.leftslide-icon:hover {
+  background-color: #dfdfda;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.leftslide-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.leftslide-text {
+  font-size: 25px;
+}
+.compose-icon {
+  width: 34px;
+  background-color: #94cfebc9;
+  border-radius: 13px;
+  padding: 11px;
+  margin: 12px 3px 16px 11px;
+}
+.slide-down > div:first-child:hover {
+  background-color: #e8f0fe;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Middle Panel */
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.down-search {
+  display: flex;
+  padding: 15px;
+  gap: 1505px;
+  margin-top: 10px;
+}
+.left-part,
+.right-part {
+  display: flex;
+  gap: 23px;
+}
+.adjust {
+  width: 20px;
+}
+.mail-list {
+  display: flex;
+  gap: 158px;
+  margin-top: 20px;
+}
+.mail-list-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 28px;
+  border-right: 1px solid #ccc;
+  font-weight: 500;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.mail-list-item:last-child {
+  border-right: none;
+}
+.mail-list-item:hover {
+  background-color: #dfdfda;
+}
+.mid-img {
+  width: 20px;
+  height: 20px;
+}
+.mail {
+  display: flex;
+  border-bottom: 1px solid #d6dce3;
+  transition: background-color 0.2s;
+}
+.mail:hover {
+  background-color: #f1f3f4;
+  cursor: pointer;
+}
+.mail-content {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.check-box {
+  width: 20px;
+  height: 20px;
+}
+.starred {
+  width: 20px;
+}
+.unstop {
+  font-size: 16px;
+}
+.work {
+  margin-left: 54px;
+}
+.time {
+  margin-left: 950px;
+  font-size: 13px;
+}
+
+/* Right Panel */
+.rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 10px;
+  text-align-last: center;
+  padding-top: 9px;
+}
+.rightside-icons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.rightside-icons:hover {
+  background-color: #dfdfda;
+  cursor: pointer;
+}
+.task {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.task:hover {
+  background-color: #dfdfda;
+  cursor: pointer;
+}
+
+/* ✅ MEDIA QUERY FIXED */
+@media (max-width: 800px) {
+  .leftslide-label {
+    display: none;
+  }
+  .leftslide {
+    padding-left: 10px;
+    align-items: center;
+  }
+  .leftslide .leftslide-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
